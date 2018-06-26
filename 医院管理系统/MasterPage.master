@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: left;
+        }
+        .auto-style2 {
+            text-align: center;
+            height: 119px;
+            font-size: xx-large;
+            background-color: #333399;
+        }
+        .auto-style3 {
+            color: #FFFFFF;
+        }
+        .auto-style4 {
+            background-color: #333399;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="auto-style1">
+        <div class="auto-style2">
+            <strong>
+            <br />
+            <span class="auto-style3">医院管理系统</span><br />
+            </strong>
+        </div>
+        <div class="auto-style4">
+            <asp:Button ID="Button1" runat="server" BackColor="#000066" BorderColor="#333399" Font-Bold="True" Font-Size="Large" ForeColor="White" Height="43px" Text="注册" Width="123px" />
+            <asp:Button ID="Button2" runat="server" BackColor="#000066" BorderColor="#333399" Font-Bold="True" Font-Size="Large" ForeColor="White" Height="43px" Text="登录 " Width="123px" />
+        </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
