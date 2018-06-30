@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Doctor.master.cs" Inherits="Doctor" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Charge.master.cs" Inherits="Charge" %>
 
 <!DOCTYPE html>
 
@@ -34,7 +34,7 @@
             <br /><span class="auto-style3">医院管理系统</span><br /></strong>
         </div>
         <div class="auto-style5">
-            <asp:Button ID="Button3" runat="server" BackColor="#000066" BorderColor="#000066" Font-Bold="True" Font-Size="Large" ForeColor="White" Height="43px" OnClick="Button3_Click" Text="病人管理" Width="123px" />
+            <asp:Button ID="Button3" runat="server" BackColor="#000066" BorderColor="#000066" Font-Bold="True" Font-Size="Large" ForeColor="White" Height="43px" OnClick="Button3_Click" Text="病人注册" Width="123px" />
         </div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
