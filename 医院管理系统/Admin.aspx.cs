@@ -11,7 +11,24 @@ public partial class Admin : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        string sqltext = "select * from userinfo where flag = 0";
+        string strConn = WebConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+        SqlConnection con = new SqlConnection(strConn);
+        con.Open();
+        SqlCommand cmd = new SqlCommand(sqltext, con);
+        SqlDataReader dr = cmd.ExecuteReader();
+        if (dr.Read())
+        {
+            Button2.Visible = true;
+            Label1.Visible = false;
+        }
+        else
+        {
+            Button2.Visible = false;
+            Label1.Visible = true;
+        }
+        dr.Close();
+        con.Close();
     }
 
     protected void Button2_Click(object sender, EventArgs e)
@@ -34,5 +51,6 @@ public partial class Admin : System.Web.UI.Page
         con.Close();
         con.Dispose();
         con = null;
+
     }
 }

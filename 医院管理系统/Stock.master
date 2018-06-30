@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="Master" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Stock.master.cs" Inherits="Stock" %>
 
 <!DOCTYPE html>
 
@@ -9,6 +9,7 @@
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
+
 
         .auto-style2 {
             text-align: center;
@@ -35,8 +36,8 @@
             </strong>
         </div>
         <div class="auto-style5">
-            <asp:Button ID="Button1" runat="server" BackColor="#000066" BorderColor="#333399" Font-Bold="True" Font-Size="Large" ForeColor="White" Height="43px" Text="用户审核" Width="123px" OnClick="Button1_Click" />
-            <asp:Button ID="Button2" runat="server" BackColor="#000066" BorderColor="#000066" Font-Bold="True" Font-Size="Large" ForeColor="White" Height="43px" OnClick="Button2_Click" Text="人员管理" Width="123px" />
+            <asp:Button ID="Button3" runat="server" BackColor="#000066" BorderColor="#000066" Font-Bold="True" Font-Size="Large" ForeColor="White" Height="43px" Text="入库登记" Width="123px" OnClick="Button3_Click" />
+            <asp:Button ID="Button4" runat="server" BackColor="#000066" BorderColor="#000066" Font-Bold="True" Font-Size="Large" ForeColor="White" Height="43px" OnClick="Button4_Click" Text="库存管理" Width="123px" />
             </div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         

@@ -18,6 +18,7 @@
 </asp:SqlDataSource>
     <asp:CheckBoxList ID="CheckBoxList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Id" DataValueField="Id" RepeatColumns="5" BackColor="White" CssClass="auto-style3" Font-Size="Medium" ForeColor="Black" AutoPostBack="True">
     </asp:CheckBoxList>
+        <asp:Label ID="Label1" runat="server" Text="近期没有待审核人员！" Visible="False"></asp:Label>
     <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="确定" Height="30px" Width="64px" />
     <br />
 </div>
