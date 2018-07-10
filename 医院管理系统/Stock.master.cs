@@ -9,7 +9,8 @@ public partial class Stock : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if ((string)Session["kname"] != "库存管理")
+            Response.Redirect("Login.aspx");
     }
 
     protected void Button3_Click(object sender, EventArgs e)

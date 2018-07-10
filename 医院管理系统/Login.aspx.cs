@@ -25,6 +25,8 @@ public partial class Login : System.Web.UI.Page
         if (dr.Read())
         {
             Response.Write("<script>alert('登录成功！')</script>");
+            Session["id"] = dr["id"];
+            Session["kname"] = dr["kname"];
             Response.Redirect("Default.aspx");
         }
         else

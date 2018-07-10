@@ -9,7 +9,8 @@ public partial class Master : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if ((string)Session["kname"] != "admin")
+            Response.Redirect("Login.aspx");
     }
 
     protected void Button1_Click(object sender, EventArgs e)

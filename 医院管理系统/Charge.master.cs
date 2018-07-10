@@ -16,4 +16,9 @@ public partial class Charge : System.Web.UI.MasterPage
     {
         Response.Redirect("AddSick.aspx");
     }
+
+    protected void Button5_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Charge.aspx");
+    }
 }

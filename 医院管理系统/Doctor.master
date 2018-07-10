@@ -35,6 +35,7 @@
         </div>
         <div class="auto-style5">
             <asp:Button ID="Button3" runat="server" BackColor="#000066" BorderColor="#000066" Font-Bold="True" Font-Size="Large" ForeColor="White" Height="43px" OnClick="Button3_Click" Text="病人管理" Width="123px" />
+            <asp:Button ID="Button4" runat="server" BackColor="#000066" BorderColor="#000066" Font-Bold="True" Font-Size="Large" ForeColor="White" Height="43px" OnClick="Button4_Click" Text="治疗处置" Width="123px" />
         </div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
