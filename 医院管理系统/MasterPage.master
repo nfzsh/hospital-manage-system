@@ -36,8 +36,8 @@
             </strong>
         </div>
         <div class="auto-style4">
-            <asp:Button ID="Button1" runat="server" BackColor="#000066" BorderColor="#333399" Font-Bold="True" Font-Size="Large" ForeColor="White" Height="43px" Text="注册" Width="123px" />
-            <asp:Button ID="Button2" runat="server" BackColor="#000066" BorderColor="#333399" Font-Bold="True" Font-Size="Large" ForeColor="White" Height="43px" Text="登录 " Width="123px" />
+            <asp:Button ID="Button1" runat="server" BackColor="#000066" BorderColor="#333399" Font-Bold="True" Font-Size="Large" ForeColor="White" Height="43px" Text="注册" Width="123px" OnClick="Button1_Click" />
+            <asp:Button ID="Button2" runat="server" BackColor="#000066" BorderColor="#333399" Font-Bold="True" Font-Size="Large" ForeColor="White" Height="43px" Text="登录 " Width="123px" OnClick="Button2_Click" />
         </div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         

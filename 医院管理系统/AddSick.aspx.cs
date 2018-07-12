@@ -11,13 +11,13 @@ public partial class AddSick : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        Response.Write(DateTime.Now.ToShortDateString());
+        //Response.Write(DateTime.Now.ToShortDateString());
     }
 
     protected void Button4_Click(object sender, EventArgs e)
     {
         string sqltext = "insert into sick values('" + TextBox1.Text + "',N'" + TextBox2.Text +
-          "',N'" + DropDownList1.SelectedValue + "',N'" + DropDownList2.SelectedValue + "',0,'" + DateTime.Now.ToShortDateString() + "',0" + ")";
+          "',N'" + DropDownList1.SelectedValue + "',N'" + DropDownList2.SelectedValue + "',0,'" + DateTime.Now.ToShortDateString() +"',null,0" + ")";
         string strConn = WebConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
         SqlConnection con = new SqlConnection(strConn);
         con.Open();

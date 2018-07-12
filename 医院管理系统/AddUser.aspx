@@ -21,6 +21,7 @@
             <asp:ListItem>神经外科</asp:ListItem>
             <asp:ListItem>急诊</asp:ListItem>
             <asp:ListItem>光学影像</asp:ListItem>
+            <asp:ListItem>收费</asp:ListItem>
         </asp:DropDownList>
     </p>
     <p class="auto-style5">

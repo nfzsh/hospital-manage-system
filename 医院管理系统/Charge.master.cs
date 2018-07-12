@@ -9,7 +9,8 @@ public partial class Charge : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if ((string)Session["kname"] != "收费")
+            Response.Redirect("Login.aspx");
     }
 
     protected void Button3_Click(object sender, EventArgs e)

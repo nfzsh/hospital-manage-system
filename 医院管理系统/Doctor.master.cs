@@ -9,7 +9,7 @@ public partial class Doctor : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["id"] == null&&(string)Session["kname"]=="库存管理"&& (string)Session["kname"] == "admin")
+        if (Session["id"] == null||(string)Session["kname"]=="库存管理" || (string)Session["kname"] == "admin"|| (string)Session["kname"] == "收费")
             Response.Redirect("Login.aspx");
         //Response.Write(Session["id"]);
     }
@@ -22,5 +22,10 @@ public partial class Doctor : System.Web.UI.MasterPage
     protected void Button4_Click(object sender, EventArgs e)
     {
         Response.Redirect("List.aspx");
+    }
+
+    protected void Button5_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("FindOut.aspx");
     }
 }

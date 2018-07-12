@@ -34,15 +34,14 @@ public partial class List : System.Web.UI.Page
         con.Open();
         SqlCommand cmd1 = new SqlCommand(sqltext, con);
         int count = cmd1.ExecuteNonQuery();
-        if (count == 1)
-            Response.Write("<script>alert('处方添加成功！')</script>");
+        Response.Write("<script>alert('处方添加成功！')</script>");
         con.Close();
         con.Dispose();
         cmd1 = null;
         con = null;
         if (CheckBox1.Checked)
         {
-            sqltext = "update sick set flag = 1 where id = " + DropDownList1.SelectedValue;
+            sqltext = "update sick set flag = 1,odate = '" + DateTime.Now.ToShortDateString() + "' where id = " + DropDownList1.SelectedValue;
             con = new SqlConnection(strConn);
             con.Open();
             SqlCommand cmd2 = new SqlCommand(sqltext, con);
@@ -51,6 +50,7 @@ public partial class List : System.Web.UI.Page
             con.Dispose();
             cmd2 = null;
             con = null;
+            Response.Redirect("List.aspx");
         }
             TextBox1.Text = "";
     }
