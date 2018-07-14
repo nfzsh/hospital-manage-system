@@ -9,7 +9,7 @@ public partial class Doctor : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["id"] == null||(string)Session["kname"]=="库存管理" || (string)Session["kname"] == "admin"|| (string)Session["kname"] == "收费")
+        if (Session["id"] == null||(string)Session["kname"].ToString().Trim() == "库存管理" || (string)Session["kname"].ToString().Trim() == "admin"|| (string)Session["kname"].ToString().Trim() == "收费")
             Response.Redirect("Login.aspx");
         //Response.Write(Session["id"]);
     }

@@ -35,7 +35,17 @@
             <asp:Parameter DefaultValue="2018/7/11" Name="odate" Type="String" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource3">
+        <Columns>
+            <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" />
+            <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
+            <asp:BoundField DataField="kname" HeaderText="kname" SortExpression="kname" />
+            <asp:BoundField DataField="dname" HeaderText="dname" SortExpression="dname" />
+            <asp:CheckBoxField DataField="mark" HeaderText="mark" SortExpression="mark" />
+            <asp:BoundField DataField="date" HeaderText="date" SortExpression="date" />
+            <asp:BoundField DataField="odate" HeaderText="odate" SortExpression="odate" />
+            <asp:CheckBoxField DataField="flag" HeaderText="flag" SortExpression="flag" />
+        </Columns>
     </asp:GridView>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Button ID="Button8" runat="server" OnClick="Button8_Click" Text="查询" />

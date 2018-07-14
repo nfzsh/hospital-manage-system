@@ -9,7 +9,7 @@ public partial class Master : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if ((string)Session["kname"] != "admin")
+        if ((string)Session["kname"].ToString().Trim() != "admin")
             Response.Redirect("Login.aspx");
     }
 
